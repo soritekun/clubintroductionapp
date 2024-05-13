@@ -35,28 +35,30 @@ class _IntroState extends State<Intro> {
           children : [
             Positioned (
               top: MediaQuery.of(context).size.height * 0.4,
-              right : 20,
-              left : 20,
-              child : AnimatedTextKit(
-                animatedTexts: [
-                  TypewriterAnimatedText(
-                    '部員募集中',
-                    textStyle: const TextStyle(
-                      fontSize: 68,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Corp',
-                      color: Colors.white,
+              right : 0,
+              left : 0,
+              child: Center(
+                child : AnimatedTextKit(
+                  animatedTexts: [
+                    TypewriterAnimatedText(
+                      '部員募集中',
+                      textStyle: const TextStyle(
+                        fontSize: 72,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Corp',
+                        color: Colors.white,
+                      ),
+                      speed: const Duration(milliseconds: 100),
                     ),
-                    speed: const Duration(milliseconds: 100),
-                  ),
-                ],
-                totalRepeatCount: 1,
-                onFinished: (){
-                  setState(() {
-                    _showButton = true;
-                  });
-                },
-              ),
+                  ],
+                  totalRepeatCount: 1,
+                  onFinished: (){
+                    setState(() {
+                      _showButton = true;
+                    });
+                  },
+                ),
+            ),
             ),
 
             if(_showButton)
