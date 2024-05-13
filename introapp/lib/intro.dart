@@ -35,8 +35,8 @@ class _IntroState extends State<Intro> {
           children : [
             Positioned (
               top: MediaQuery.of(context).size.height * 0.4,
-              right : 50,
-              child: Center(
+              right : 0,
+              left : 0,
                 child : AnimatedTextKit(
                   animatedTexts: [
                     TypewriterAnimatedText(
@@ -58,8 +58,6 @@ class _IntroState extends State<Intro> {
                   },
                 ),
             ),
-            ),
-
             if(_showButton)
               Positioned(
                 bottom: MediaQuery.of(context).size.height * 0.3,
