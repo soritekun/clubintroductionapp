@@ -35,7 +35,7 @@ class _IntroState extends State<Intro> {
           children : [
             Positioned (
               top: MediaQuery.of(context).size.height * 0.4,
-              right : MediaQuery.of(context).size.width * 0.5,
+              right : 50,
               child: Center(
                 child : AnimatedTextKit(
                   animatedTexts: [
